@@ -1,0 +1,60 @@
+body{
+    background-color: gray;
+}
+header{
+    height: 100px;
+    background-color: honeydew;
+    border-radius: 10px;
+    margin: 5px;
+}
+.nav{
+    background-color: burlywood;
+    border-radius: 10px;
+    
+    height: 400px;
+    
+}
+.article{
+    background-color: coral;
+    border-radius: 10px;
+    
+    height: 400px;
+    
+}
+.aside{
+    background-color: cornsilk;
+    border-radius: 10px;
+    
+    height: 400px;
+   
+}
+footer{
+    background-color: cyan;
+    border-radius: 10px;
+    margin: 5px;
+    height: 100px;
+    
+}
+
+@media only screen and (min-width: 992px){
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .article , .aside , .nav{
+        width: 33%;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .article , .aside , .nav{
+        width: 100%;
+    }
+}
